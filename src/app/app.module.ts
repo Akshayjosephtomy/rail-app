@@ -6,21 +6,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewalltrainsComponent } from './viewalltrains/viewalltrains.component';
-import { BindingComponent } from './binding/binding.component';
 
 const link:Routes=[
   {
     path:"",component:ViewalltrainsComponent
-  },
-  {
-    path:"food",component:BindingComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    ViewalltrainsComponent,
-    BindingComponent
+    ViewalltrainsComponent
   ],
   imports: [
     BrowserModule,
